@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<UpdateDescr>
-<Mac>
-<Release Version="2099.99.99" ReleaseDate="2026-05-15" Update="mandatory">
-<DownloadPath>https://download.adobe.com/pub/connect/updaters/meeting/11/AdobeConnectInstaller_2024_11_64.zip</DownloadPath>
-<Description lang="en">There is a new version of Adobe Connect application. Would you like to update the application?</Description>
-</Release>
-</Mac>
-</UpdateDescr>
