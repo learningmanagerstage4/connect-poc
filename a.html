@@ -1,0 +1,10 @@
+<html><body>
+<div id="o"></div>
+<script>
+var o = document.getElementById('o');
+function log(m) { o.innerHTML += m + '<br>'; }
+log('v: ' + connectApp.appVersion());
+var u = 'https://learningmanagerstage4.github.io/connect-poc/s1.xml?c=' + Date.now();
+try { connectApp.checkForUpdates(u, false, true); log('ok'); } catch(e) { log(e.message); }
+</script>
+</body></html>
