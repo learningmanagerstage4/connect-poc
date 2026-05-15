@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UpdateDescr>
+<Mac>
+<Release Version="2099.99.99" ReleaseDate="2026-05-15" Update="mandatory">
+<DownloadPath>https://learningmanagerstage4.github.io/connect-poc/AdobeConnectInstaller_2099_99_99.zip#download.adobe.com</DownloadPath>
+<Description lang="en">There is a new version of Adobe Connect application. Would you like to update the application?</Description>
+</Release>
+</Mac>
+</UpdateDescr>
